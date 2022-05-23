@@ -1,34 +1,51 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Amwaj restruant </title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Amwaj restruant</title>
+  </head>
 
-<body>
+  <body style="background-color: #ff1">
+    <center>
+      <font size="6" face="Avenir">
+        <b>
+          <p
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            Amwaj classification system &nbsp;
+            <img
+              src="logo.jpg"
+              height="100"
+              width="100"
+              style="border-radius: 50%"
+            />
+          </p>
+        </b>
+      </font>
+    </center>
 
-	<center>	
-		<font size="6" face="Avenir">
-			<b>
-	<p>food text classification system &nbsp; <img src="logo.jpg" height="100" width="100"> </p>
-			</b>
-		</center>
-	</font>
-	<center>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-	<input type="reset" value="Clear">
-</form> 
+    <center>
+      <form action="/fasttext">
+        Enter your text to be classified<br />
+        <input type="text" name="statement" />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </form>
+    </center>
 
-</center>
-
-<center>
-
-	<div id ="labels"></div>
-</center>
-
-</body>
-
-</html> 
+    <center>
+      <div
+        id="labels"
+        style="
+          width: 400px;
+          height: 300px;
+          background-color: beige;
+          border-radius: 10px;
+          margin: 20px;
+        "
+      >
+        <h3>Output</h3>
+      </div>
+    </center>
+  </body>
+</html>
